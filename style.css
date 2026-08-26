@@ -949,4 +949,143 @@ footer a:hover {
     }
 
 }
+    /* ================================
+   REFINAMENTO VISUAL
+   ================================ */
+
+/* HERO COM FUNDO DIFERENTE */
+
+.hero {
+    background: #eee5db;
+    max-width: none;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.hero-image {
+    border: 10px solid #f7f3ee;
+    outline: 1px solid rgba(154, 104, 76, 0.25);
+    box-shadow: 0 12px 35px rgba(60, 45, 35, 0.08);
+}
+
+
+/* MOLDURAS DAS FOTOS DOS PRODUTOS */
+
+.product-image {
+    padding: 8px;
+    background: #f7f3ee;
+    border: 1px solid rgba(154, 104, 76, 0.18);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* MOLDURA DA FOTO SOBRE */
+
+.about-image {
+    padding: 9px;
+    background: #f7f3ee;
+    border: 1px solid rgba(154, 104, 76, 0.2);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    padding: 55px 8% 35px;
+
+    background: #29251f;
+    color: #cfc5bb;
+
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+
+    align-items: center;
+
+    gap: 40px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-logo {
+    color: #fffaf4;
+    font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
+}
+
+footer p {
+    max-width: 250px;
+    font-size: .82rem;
+    line-height: 1.6;
+}
+
+footer a {
+    justify-self: end;
+    color: #fffaf4;
+    font-size: .82rem;
+}
+
+footer a:hover {
+    color: #d1a98e;
+}
+
+
+/* AJUSTES MOBILE PARA O NOVO HERO E RODAPÉ */
+
+@media (max-width: 850px) {
+
+    .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    footer a {
+        justify-self: start;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-image {
+        border-width: 7px;
+    }
+
+    .product-image {
+        padding: 6px;
+    }
+
+    .about-image {
+        padding: 7px;
+    }
+
+    footer {
+        padding: 45px 20px 30px;
+    }
+
+}
 }
