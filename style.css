@@ -668,4 +668,285 @@ footer a:hover {
 
         align-items: flex-start;
     }
+
+    /* ================================
+   AJUSTES MOBILE
+   ================================ */
+
+@media (max-width: 520px) {
+
+    /* Evita qualquer elemento ultrapassar a tela */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Cabeçalho */
+    .header {
+        width: 100%;
+        height: 64px;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    /* HERO */
+
+    .hero {
+        width: 100%;
+        padding: 45px 20px 60px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 2.7rem;
+        line-height: 1.05;
+
+        margin: 15px 0 20px;
+    }
+
+    .hero-content > p {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+    .main-button {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 390px;
+
+        overflow: hidden;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* FRASE */
+
+    .phrase {
+        width: 100%;
+        padding: 60px 25px;
+    }
+
+    .phrase p {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+
+    /* SEÇÕES */
+
+    .products-section,
+    .how-section {
+        width: 100%;
+        padding: 65px 20px;
+    }
+
+    .section-title {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-title > p {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 18px;
+    }
+
+
+    /* PRODUTOS */
+
+    .products {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .product-info {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .product-info > p {
+        min-height: 0;
+    }
+
+    .product-bottom {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .product-bottom a {
+        display: inline-block;
+    }
+
+
+    /* SOBRE */
+
+    .about {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 35px;
+
+        padding: 65px 20px;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 360px;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content h2 {
+        width: 100%;
+        font-size: 2.6rem;
+    }
+
+    .about-content p {
+        width: 100%;
+    }
+
+
+    /* COMO FUNCIONA */
+
+    .steps {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 28px;
+    }
+
+    .step {
+        width: 100%;
+        padding-right: 0;
+    }
+
+
+    /* DEPOIMENTO */
+
+    .testimonial {
+        width: 100%;
+        padding: 65px 20px;
+    }
+
+    .testimonial p {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+
+    /* CONTATO */
+
+    .contact {
+        width: 100%;
+        padding: 75px 20px;
+    }
+
+    .contact h2 {
+        font-size: 2.8rem;
+    }
+
+    .contact p {
+        width: 100%;
+    }
+
+    .contact-button {
+        max-width: 100%;
+    }
+
+
+    /* RODAPÉ */
+
+    footer {
+        width: 100%;
+
+        padding: 28px 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+}
 }
